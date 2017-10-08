@@ -1,0 +1,42 @@
+body {
+	margin: 8;
+	padding-left: 15em;
+	padding-top: 1em;
+    color: blue;
+    background-image: url(background.png);
+	background-position: top,center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: #FCC9B9
+	}
+ul.navbar {
+	
+    padding: 0;
+    margin: 2;
+    position: absolute;
+    top: 6em;
+    left: 5em;
+    width: 8em }
+ul.navbar li {
+	list-style-type: none;
+    background: pink;
+    margin: 0.5em 0;
+    padding: 0.3em;
+    border-left: 1em solid brown }
+ul.navbar a {
+    text-decoration: none }
+
+h1 {
+	font-size:250%;}
+	
+div.inside {
+	font-size:150%;
+	}
+
+div.inside a {
+	text-decoration: none}
+	
+address {
+	position: absolute;
+	top: 38em;
+    left: 6em;}
