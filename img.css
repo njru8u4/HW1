@@ -2,9 +2,32 @@ ul.images {
 	padding: 0;
     margin: 0;
 	list-style-type: none;
-	
 }
 
 img[title='0']{
-	width:100px;
+	position: relative;
+	width:320px;
+	height:;
+	top:0px;
+}
+
+img[title='1']{
+	position: relative;
+	width:320px;
+	height:;
+	top:0px;
+}
+
+img[title='2']{
+	position: relative;
+	width:320px;
+	height:;
+	top:0px;
+}
+
+img[title='3']{
+	position: relative;
+	width:320px;
+	height:;
+	top:0px;
 }
