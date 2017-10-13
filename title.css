@@ -37,6 +37,6 @@ div.inside a {
 	text-decoration: none}
 	
 address {
-	position: absolute;
-	top: 38em;
+	position: fixed;
+	bottom:1em;
     left: 6em;}
