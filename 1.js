@@ -1,15 +1,16 @@
 //big();
 var imgs = ['img[title=0]', 'img[title=1]', 'img[title=2]', 'img[title=3]'];
 //step(0,imgs);
-normal_step();
 
-temer();
 
-var step = 0;
-//while (normal_step())
+//temer();
+//jQuery('ul.images').css('visibility','hidden');
+var step = normal_step();
+/*while (1)
 {
-	
-}
+	steps(step,imgs)
+	step++;
+}*/
 
 
 
@@ -42,12 +43,13 @@ function normal_step()
 		jQuery(imgs[i]).css('top', (jQuery(imgs[i]).height())*1);
 		jQuery(imgs[i]).css('left', 100*i+100);
 		jQuery(imgs[i]).css('z-index', i);
-		jQuery(imgs[i]).css('visibility', '');
+		//jQuery(imgs[i]).css('visibility', '');
 		//jQuery(imgs[(i+step)%4]).animate({'left':(i+step)%4*i*100}, 2000);
 	}
-	first_steps(0, imgs);
+	//var step = first_steps(0, imgs);
+	//steps(1,imgs);
 	
-	return ;
+	return first_steps(0, imgs);
 }
 
 function first_steps(step, imgs)
@@ -61,8 +63,9 @@ function first_steps(step, imgs)
 		jQuery(imgs[i]).animate({'z-index':temp});
 		jQuery(imgs[i]).animate({'left':temp*100+100}, 2000);
 	}
-	
+	//return step;
 	steps(++step, imgs);
+	return step;
 }
 
 function steps(step, imgs)
@@ -95,16 +98,17 @@ function steps(step, imgs)
 		
 		
 		
-		jQuery(imgs[i]).animate({'z-index':temp});
-		jQuery(imgs[i]).animate({'left':temp*100+100}, 2000);
+		jQuery(imgs[i]).animate({'z-index':temp}).animate({'left':temp*100+100}, 2000);
+		//jQuery(imgs[i]).animate({'left':temp*100+100}, 2000);
 	}
 	//if (step == 4)
 		//return step;
+	//jQuery('ul.images').click(function(){jQuery('ul.images').css('width', '480');});
 	
 	steps(++step, imgs);
 }
 	
-	
+//function over()
 	
 	
 	
